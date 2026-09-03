@@ -10,7 +10,7 @@
 
 **Section:** 9
 **Academic Year:** 2026–2027
-**Supervisor:** `<Guide Name>`
+**Supervisor:** `<VINAY KUMAR SIR>`
 
 ## Abstract
 
