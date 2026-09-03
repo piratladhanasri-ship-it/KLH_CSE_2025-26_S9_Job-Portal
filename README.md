@@ -38,8 +38,8 @@ The Intelligent Job Portal is a smart job-search system designed to help applica
 ## Setup & Execution
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone <https://github.com/piratladhanasri-ship-it/KLH_CSE_2025-26_S9_Job-Portal>
+cd <Intelligent Job Portal>
 cd src
 ```
 
