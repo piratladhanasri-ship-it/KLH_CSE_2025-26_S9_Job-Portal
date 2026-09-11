@@ -1,0 +1,20 @@
+KMP STRING MATCHING RESULTS
+===========================
+
+Corpus: jobs.txt
+Search Pattern: Python
+
+Line 1: Software Developer - Python, Java, SQL - Hyderabad
+Match Position: 19
+
+Line 2: Data Analyst - Python, SQL, Power BI - Bangalore
+Match Position: 16
+
+Line 3: Machine Learning Engineer - Python, TensorFlow, Machine Learning - Hyderabad
+Match Position: 24
+
+Line 5: Python Developer - Python, Django, SQL - Hyderabad
+Match Positions: 0, 17
+
+Total Matching Lines: 4
+Algorithm Used: Knuth-Morris-Pratt (KMP)
