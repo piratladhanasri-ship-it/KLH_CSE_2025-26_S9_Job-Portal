@@ -1,0 +1,22 @@
+INTELLIGENT JOB PORTAL
+
+Project Objective:
+To develop an intelligent job search system that helps users find relevant job opportunities based on skills and location.
+
+Problem Statement:
+Traditional job portals may return many irrelevant results when users search using simple keywords. There is a need for faster and more relevant job searching with multiple filters and ranking.
+
+Proposed Solution:
+The Intelligent Job Portal uses Data Structures and Algorithms to efficiently search, filter, and rank job postings.
+
+Main Features:
+1. Skill-based job search
+2. Location-based filtering
+3. Job title search
+4. Skill autocomplete
+5. Multiple filter combination
+6. Relevance-based job ranking
+7. Fast searching on large job datasets
+
+Expected Outcome:
+The system should provide faster and more relevant job results while reducing unnecessary job listings for users.
