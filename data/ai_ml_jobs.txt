@@ -1,0 +1,10 @@
+Machine Learning Engineer - Python, TensorFlow, Machine Learning - Hyderabad
+AI Engineer - Python, PyTorch, Deep Learning - Bangalore
+NLP Engineer - Python, NLP, Transformers - Chennai
+Computer Vision Engineer - Python, OpenCV, Deep Learning - Hyderabad
+Machine Learning Developer - Python, Scikit-learn, TensorFlow - Pune
+AI Developer - Python, PyTorch, NLP - Bangalore
+Deep Learning Engineer - Python, TensorFlow, Keras - Hyderabad
+Machine Learning Analyst - Python, R, Machine Learning - Chennai
+AI Research Engineer - Python, Deep Learning, PyTorch - Hyderabad
+Junior Machine Learning Engineer - Python, SQL, Scikit-learn - Bangalore
