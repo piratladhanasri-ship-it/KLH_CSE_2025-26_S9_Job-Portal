@@ -1,67 +1,30 @@
-import java.io.*;
+import java.io.IOException;
 import java.nio.file.*;
 import java.util.*;
 
 public class JobCorpus {
 
-    // Load all job files from the corpus folder
-    public static List<Job> loadJobs(String folderPath)
+    public static Map<String, List<String>> loadCorpus(String folder)
             throws IOException {
 
-        List<Job> jobs = new ArrayList<>();
+        Map<String, List<String>> corpus = new LinkedHashMap<>();
 
-        Path folder = Paths.get(folderPath);
+        Path folderPath = Paths.get(folder);
 
-        if (!Files.exists(folder)) {
-            throw new FileNotFoundException(
-                "Corpus folder not found: "
-                + folder.toAbsolutePath()
-            );
-        }
+        try (DirectoryStream<Path> files =
+                     Files.newDirectoryStream(folderPath, "*.txt")) {
 
-        // Read all .txt files
-        try (DirectoryStream<Path> stream =
-                     Files.newDirectoryStream(folder, "*.txt")) {
+            for (Path file : files) {
 
-            for (Path file : stream) {
+                List<String> lines = Files.readAllLines(file);
 
-                List<String> lines =
-                        Files.readAllLines(file);
-
-                if (lines.isEmpty()) {
-                    continue;
-                }
-
-                // First line = Job Title
-                String title = lines.get(0).trim();
-
-                // Remaining lines = Description
-                String description =
-                        String.join(
-                                " ",
-                                lines.subList(1, lines.size())
-                        ).trim();
-
-                // File name becomes Job ID
-                String id =
-                        file.getFileName()
-                            .toString()
-                            .replaceFirst(
-                                "(?i)\\.txt$",
-                                ""
-                            );
-
-                jobs.add(
-                    new Job(id, title, description)
+                corpus.put(
+                    file.getFileName().toString(),
+                    lines
                 );
             }
         }
 
-        // Sort jobs by ID
-        jobs.sort(
-            Comparator.comparing(Job::getId)
-        );
-
-        return jobs;
+        return corpus;
     }
 }
