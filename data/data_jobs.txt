@@ -1,0 +1,10 @@
+Data Analyst - Python, SQL, Power BI - Bangalore
+Data Scientist - Python, R, Machine Learning - Hyderabad
+Business Data Analyst - SQL, Excel, Tableau - Chennai
+Data Engineer - Python, SQL, Spark, AWS - Hyderabad
+Junior Data Analyst - SQL, Excel, Power BI - Pune
+Data Scientist - Python, Pandas, Scikit-learn - Bangalore
+Data Engineer - Python, Hadoop, Spark, SQL - Chennai
+Business Intelligence Analyst - SQL, Power BI, Tableau - Hyderabad
+Data Analyst - Python, Excel, Tableau - Bangalore
+Senior Data Scientist - Python, Machine Learning, SQL - Hyderabad
