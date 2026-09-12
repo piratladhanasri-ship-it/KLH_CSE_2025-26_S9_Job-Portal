@@ -1,26 +1,28 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class KMPMatcher {
 
-    // Build LPS (Longest Prefix Suffix) array
-    public static int[] buildLPS(String pattern) {
+    // Create the LPS (Longest Prefix Suffix) array
+    private static int[] computeLPS(String pattern) {
 
         int[] lps = new int[pattern.length()];
-
-        int len = 0;
+        int length = 0;
         int i = 1;
 
         while (i < pattern.length()) {
 
-            if (Character.toLowerCase(pattern.charAt(i)) ==
-                Character.toLowerCase(pattern.charAt(len))) {
+            if (Character.toLowerCase(pattern.charAt(i))
+                    == Character.toLowerCase(pattern.charAt(length))) {
 
-                len++;
-                lps[i] = len;
+                length++;
+                lps[i] = length;
                 i++;
 
             } else {
 
-                if (len > 0) {
-                    len = lps[len - 1];
+                if (length != 0) {
+                    length = lps[length - 1];
                 } else {
                     lps[i] = 0;
                     i++;
@@ -31,39 +33,38 @@ public class KMPMatcher {
         return lps;
     }
 
-    // KMP String Matching
-    public static boolean contains(String text, String pattern) {
+    // KMP string matching algorithm
+    public static List<Integer> search(String text, String pattern) {
 
-        if (pattern == null || pattern.isBlank()) {
-            return true;
+        List<Integer> positions = new ArrayList<>();
+
+        if (pattern == null || pattern.isEmpty()) {
+            return positions;
         }
 
-        if (text == null || text.isEmpty()) {
-            return false;
-        }
-
-        text = text.toLowerCase();
-        pattern = pattern.toLowerCase();
-
-        int[] lps = buildLPS(pattern);
+        int[] lps = computeLPS(pattern);
 
         int i = 0;
         int j = 0;
 
         while (i < text.length()) {
 
-            if (text.charAt(i) == pattern.charAt(j)) {
+            if (Character.toLowerCase(text.charAt(i))
+                    == Character.toLowerCase(pattern.charAt(j))) {
 
                 i++;
                 j++;
 
                 if (j == pattern.length()) {
-                    return true;
+
+                    positions.add(i - j);
+
+                    j = lps[j - 1];
                 }
 
             } else {
 
-                if (j > 0) {
+                if (j != 0) {
                     j = lps[j - 1];
                 } else {
                     i++;
@@ -71,6 +72,6 @@ public class KMPMatcher {
             }
         }
 
-        return false;
+        return positions;
     }
 }
