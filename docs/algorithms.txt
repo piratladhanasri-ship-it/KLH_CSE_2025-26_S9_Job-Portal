@@ -1,0 +1,19 @@
+DATA STRUCTURES AND ALGORITHMS USED
+
+1. HASHING
+Hashing is used for fast indexing and lookup of job-related information such as skills and job categories.
+
+2. TRIE
+A Trie is used for efficient skill and job-title searching and autocomplete.
+
+3. SET INTERSECTION
+Set intersection is used to combine multiple filters such as required skills and job locations.
+
+4. MAX HEAP
+A Max Heap is used to rank matching jobs according to their relevance score.
+
+5. KMP STRING MATCHING
+The Knuth-Morris-Pratt algorithm is used to search for a skill or keyword inside the job corpus efficiently.
+
+6. JOB CORPUS
+The job corpus contains multiple text files with job postings from different categories such as software, data, AI/ML, web development, cloud, and cybersecurity.
