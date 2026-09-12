@@ -1,0 +1,16 @@
+INTELLIGENT JOB PORTAL
+DSA-3 PROJECT ABSTRACT
+
+Modern job portals contain thousands of job postings, making manual browsing slow and inefficient for applicants.
+
+This project presents an Intelligent Job Portal that uses efficient data structures and algorithms to provide fast, skill- and location-aware job search.
+
+Job postings are indexed using hashing and trie-based structures for efficient skill and title lookup, while set intersection is used to combine skill, location, and other filtering criteria.
+
+A max-heap is employed to rank matching jobs according to a weighted relevance score, allowing the most suitable listings to be displayed first.
+
+The system also supports fast autocomplete and scalable searching through indexed data.
+
+The proposed approach aims to reduce irrelevant results, improve search speed and relevance, and maintain efficient performance as the number of job postings increases.
+
+By combining these techniques, the portal provides applicants with a streamlined search experience and helps them identify relevant opportunities more effectively.
