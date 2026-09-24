@@ -1,0 +1,133 @@
+import java.io.IOException;
+import java.nio.file.*;
+import java.util.*;
+
+public class IntelligentJobSearch {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter skill/job keyword to search: ");
+
+        String pattern = scanner.nextLine().trim();
+
+        if (pattern.isEmpty()) {
+            System.out.println("Please enter a keyword.");
+            return;
+        }
+
+        try {
+
+            // Load all corpus files
+            Map<String, List<String>> corpus =
+                    JobCorpus.loadCorpus("../data");
+
+            StringBuilder output = new StringBuilder();
+
+            output.append("KMP STRING MATCHING RESULTS\n");
+            output.append("===========================\n");
+            output.append("Search Pattern: ")
+                    .append(pattern)
+                    .append("\n\n");
+
+            int totalMatches = 0;
+
+            // Search every corpus file
+            for (Map.Entry<String, List<String>> entry
+                    : corpus.entrySet()) {
+
+                String fileName = entry.getKey();
+                List<String> lines = entry.getValue();
+
+                boolean foundInFile = false;
+
+                for (int i = 0; i < lines.size(); i++) {
+
+                    String line = lines.get(i);
+
+                    // Apply KMP
+                    List<Integer> positions =
+                            KMPMatcher.search(line, pattern);
+
+                    if (!positions.isEmpty()) {
+
+                        if (!foundInFile) {
+
+                            System.out.println(
+                                    "\nFILE: " + fileName
+                            );
+
+                            output.append("FILE: ")
+                                    .append(fileName)
+                                    .append("\n");
+
+                            foundInFile = true;
+                        }
+
+                        totalMatches += positions.size();
+
+                        System.out.println(
+                                "Line " + (i + 1)
+                                        + ": " + line
+                        );
+
+                        System.out.println(
+                                "Match Positions: "
+                                        + positions
+                        );
+
+                        output.append("Line ")
+                                .append(i + 1)
+                                .append(": ")
+                                .append(line)
+                                .append("\n");
+
+                        output.append(
+                                "Match Positions: "
+                        )
+                                .append(positions)
+                                .append("\n\n");
+                    }
+                }
+
+                if (foundInFile) {
+                    output.append("\n");
+                }
+            }
+
+            output.append("Total Matches: ")
+                    .append(totalMatches)
+                    .append("\n");
+
+            // Save results
+            Path resultPath =
+                    Paths.get("../results/kmp_results.txt");
+
+            Files.createDirectories(resultPath.getParent());
+
+            Files.writeString(
+                    resultPath,
+                    output.toString()
+            );
+
+            System.out.println(
+                    "\nTotal Matches: " + totalMatches
+            );
+
+            System.out.println(
+                    "Results saved to: "
+                            + resultPath
+            );
+
+        } catch (IOException e) {
+
+            System.out.println(
+                    "Error reading corpus: "
+                            + e.getMessage()
+            );
+        }
+
+        scanner.close();
+    }
+}
