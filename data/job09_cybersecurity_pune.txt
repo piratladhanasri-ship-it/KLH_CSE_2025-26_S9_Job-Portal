@@ -1,0 +1,7 @@
+Job ID: J009
+Title: Cybersecurity Analyst
+Company: SecureNet Systems
+Location: Pune
+Experience: 0-2 years
+Skills: Cybersecurity, Linux, Networking, Python
+Description: Monitor security events and assist with vulnerability analysis. Basic Linux, networking and Python knowledge is helpful.

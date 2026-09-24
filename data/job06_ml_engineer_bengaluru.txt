@@ -1,0 +1,7 @@
+Job ID: J006
+Title: Machine Learning Engineer
+Company: NeuralWorks
+Location: Bengaluru
+Experience: 1-3 years
+Skills: Python, Machine Learning, NumPy, Pandas, SQL
+Description: Develop machine learning solutions using Python. Knowledge of NumPy, Pandas and SQL is preferred.

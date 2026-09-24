@@ -1,0 +1,7 @@
+Job ID: J001
+Title: Java Developer
+Company: TechNova Solutions
+Location: Hyderabad
+Experience: 0-2 years
+Skills: Java, SQL, OOP, Data Structures, Git
+Description: Entry-level Java developer role for candidates with Java and SQL skills. Knowledge of data structures and Git is preferred.

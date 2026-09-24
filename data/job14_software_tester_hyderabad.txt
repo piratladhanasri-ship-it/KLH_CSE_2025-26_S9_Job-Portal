@@ -1,0 +1,7 @@
+Job ID: J014
+Title: Software Test Engineer
+Company: QualityFirst Labs
+Location: Hyderabad
+Experience: 0-2 years
+Skills: Java, Selenium, SQL, Testing
+Description: Create and execute software tests using Selenium. Java and SQL knowledge are preferred.

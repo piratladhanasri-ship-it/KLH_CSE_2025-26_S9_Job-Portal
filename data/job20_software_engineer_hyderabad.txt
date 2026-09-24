@@ -1,0 +1,7 @@
+Job ID: J020
+Title: Software Engineer
+Company: NextGen Software
+Location: Hyderabad
+Experience: 0-2 years
+Skills: Java, Python, SQL, Data Structures, Algorithms, Git
+Description: Entry-level software engineering role involving programming, data structures, algorithms and database development.

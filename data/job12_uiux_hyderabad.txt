@@ -1,0 +1,7 @@
+Job ID: J012
+Title: UI UX Designer
+Company: DesignHive
+Location: Hyderabad
+Experience: 0-2 years
+Skills: Figma, UI Design, UX Research, Prototyping
+Description: Create user interfaces and prototypes. Candidates should understand basic UX research and visual design.

@@ -1,0 +1,7 @@
+Job ID: J018
+Title: Backend Developer
+Company: APIWorks
+Location: Hyderabad
+Experience: 0-2 years
+Skills: Java, Python, REST API, SQL, Git
+Description: Build backend services and REST APIs. Candidates may work with Java or Python and should understand SQL.

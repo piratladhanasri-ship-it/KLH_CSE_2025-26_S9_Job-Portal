@@ -1,0 +1,7 @@
+Job ID: J016
+Title: DSA Software Intern
+Company: AlgorithmWorks
+Location: Hyderabad
+Experience: Internship
+Skills: Java, C++, Data Structures, Algorithms, Problem Solving
+Description: Internship focused on implementing data structures and algorithms using Java or C++. Strong problem solving skills are expected.

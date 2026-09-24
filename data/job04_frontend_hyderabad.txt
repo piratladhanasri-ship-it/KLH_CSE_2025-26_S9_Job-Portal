@@ -1,0 +1,7 @@
+Job ID: J004
+Title: Frontend Developer
+Company: PixelCraft Labs
+Location: Hyderabad
+Experience: 0-2 years
+Skills: HTML, CSS, JavaScript, React, Git
+Description: Build responsive web interfaces using HTML, CSS, JavaScript and React. Git knowledge is required.

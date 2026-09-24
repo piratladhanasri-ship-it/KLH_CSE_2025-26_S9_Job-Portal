@@ -1,0 +1,7 @@
+Job ID: J011
+Title: Java Developer
+Company: AppWorks India
+Location: Bengaluru
+Experience: 0-2 years
+Skills: Java, Spring Boot, SQL, Data Structures
+Description: Build scalable backend applications with Java. Candidates should understand SQL, data structures and object oriented programming.

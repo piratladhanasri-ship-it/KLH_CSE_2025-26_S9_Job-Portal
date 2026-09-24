@@ -1,0 +1,7 @@
+Job ID: J005
+Title: Data Analyst
+Company: DataVista Analytics
+Location: Hyderabad
+Experience: 0-2 years
+Skills: Python, SQL, Excel, Statistics
+Description: Analyze business data using Python and SQL. Candidates should understand basic statistics and data visualization.

@@ -1,0 +1,7 @@
+Job ID: J002
+Title: Python Developer
+Company: CloudBridge Technologies
+Location: Bengaluru
+Experience: 0-2 years
+Skills: Python, SQL, REST API, Git
+Description: Work on Python applications and REST APIs. Candidates should understand programming fundamentals and SQL.
